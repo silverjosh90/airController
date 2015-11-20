@@ -1,7 +1,7 @@
 var departures = document.getElementById('departure')
 var arrivals = document.getElementById('arrival')
 var bags = document.getElementById("bags")
-var seating= document.getElementById("class")
+var seating= document.getElementById("seating")
 var button = document.getElementById("button")
 var total = document.getElementById('cost')
 var wifi= document.getElementById("wifi")
