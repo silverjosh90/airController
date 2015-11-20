@@ -1,77 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Airfare Calculator</title>
   <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
 </head>
+
 <body>
-  <h1 id="title">AIR FARE CALCULATOR</h1>
-<section class="calculator">
-<form>
-  <p>
-  <label for="depature">Departure City</label>
-<br />
-  <select name="departure" id="departure">
-    <option selected>Select a City..</option>
-    <option value="1.2" id="chicagoD">Chicago</option>
-    <option value="1.3" id="losangelesD">Los Angeles</option>
-    <option value="1.8" id="newYorkD">New York</option>
+  <header>
+    <h1 id="title"> / / / AIR FAIR / </h1>
+  </header>
+  <section class="calculator">
+    <form>
+      <p>
+        <label for="depature">Departure City</label>
+        <br />
+        <select name="departure" id="departure">
+          <option selected>Select a City..</option>
+          <option value="1.2" id="chicagoD">Chicago</option>
+          <option value="1.3" id="losangelesD">Los Angeles</option>
+          <option value="1.8" id="newYorkD">New York</option>
 
-  </select>
-</p>
-<p>
-<label for="arrival">Arrival City</label>
-<br />
-<select name="arrival" id="arrival">
-  <option selected>Select a City..</option>
-  <option value="1.2" id="chicagoA">Chicago</option>
-  <option value="1.3" id="losangelesA">Los Angeles</option>
-  <option value="1.8" id="newYorkA">New York</option>
+        </select>
+      </p>
+      <p>
+        <label for="arrival">Arrival City</label>
+        <br />
+        <select name="arrival" id="arrival">
+          <option selected>Select a City..</option>
+          <option value="1.2" id="chicagoA">Chicago</option>
+          <option value="1.3" id="losangelesA">Los Angeles</option>
+          <option value="1.8" id="newYorkA">New York</option>
 
-</select>
-</p>
-<p>
-<label for="bags">Number of Checked Bags ($25/bag)</label>
-<br />
-<input type="number" step = '1' min = '0' max = '3' name = 'bags' id="bags" value''>
+        </select>
+      </p>
+      <p>
+        <label for="bags">Bags to Check ($25/bag)</label>
+        <br />
+        <input type="number" step='1' min='0' max='3' name='bags' id="bags" value ''>
 
-</select>
-</p>
-<p>
-<label for="class">Seating Preference</label>
-<br />
-<select name="seating" id="seating">
-  <option selected>Coach</option>
-  <option value="1">Business (+ $200)</option>
-  <option value="2">First (+ $500)</option>
+        </select>
+      </p>
+      <p>
+        <label for="class">Seating Preference</label>
+        <br />
+        <select name="seating" id="seating">
+          <option selected>Coach</option>
+          <option value="1">Business (+ $200)</option>
+          <option value="2">First (+ $500)</option>
 
-</select>
-</p>
-<p>
-<label for="wifi">Wifi (+ $12)
-<input type="checkbox" name="wifi" id="wifi"></label>
-</p>
-<p>
-<label for="discount">Discount code</label>
-<br />
-<input type="text" name="discount" id="discount">
-</p>
+        </select>
+      </p>
+      <p>
+        <label for="wifi">Wifi (+ $12)
+          <input type="checkbox" name="wifi" id="wifi">
+        </label>
+      </p>
+      <p>
+        <label for="discount">Discount code</label>
+        <br />
+        <input type="text" name="discount" id="discount" value=''>
+      </p>
 
-<button type="button" id="button">Calculate Price</button>
+      <button type="button" id="button">Calculate Price</button>
+      <button type="reset" id='reset' value="Reset">Start Over</button>
+
+    </form>
+  </section>
+  <section class="resultsDisplay" <p id="cost">
+    </p>
+  </section>
+  <br />
 
 
-</form>
-<p id="cost">
+  <script src='js/logic.js'></script>
+  <script src="js/script.js"></script>
 
-</p>
-</section>
-<br />
-
-
-<script src='js/logic.js'></script>
-<script src="js/script.js"></script>
-
-</script>
+  </script>
+  <footer>
+    / / / / / /
+  </footer>
 </body>
+
 </html>

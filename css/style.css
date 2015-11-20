@@ -1,40 +1,72 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: #499D9D;
+  background: #31D3D3;
 }
-
 body > * {
   position: relative;
   width: 80vw;
-  text-align: center;
+  text-align: left;
   font-family: helvetica;
 }
-
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8vh;
+  width: 100vw;
+  background-color: white;
+}
 h1 {
+  padding: 0;
+  font-size: 3vh;
+  margin-left: 1vw;
   font-family: futura;
-  margin: 0 auto;
-  color: white;
+  vertical-align: middle;
+  color: #31D3D3;
 }
 input {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-  width: 25vw;
+  width: 15vw;
 }
-
 input[type=checkbox] {
   box-shadow: none;
 }
-
+footer {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
+  height: 9vh;
+  background-color: white;
+  font-size: 8vh;
+  color: #31D3D3;
+  padding: 1vw;
+}
+.resultsDisplay {
+  float: left;
+  text-align: center;
+  width: 35vw;
+  height: 18vh;
+  margin-top: 35vh;
+  margin-left: 10vh;
+  padding: 2vw;
+}
 #cost {
+  border: 1px solid white;
+  top: 1vh;
   font-family: futura;
   font-size: 12vh;
   color: white;
 }
 .calculator {
+  float: left;
   height: 80vh;
-  margin: 0 auto;
-  background: #31D3D3;
-  border: 0px;
-  border-radius: 5%;
-  text-align: center;
+  width: 35vw;
+  top: 8vh;
+  padding: 3vh;
+  text-align: left;
+  font-family: futura;
+  font-size: 3vh;
+  color: white;
 }
