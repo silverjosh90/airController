@@ -2,7 +2,6 @@ var cost = 0;
 function finalCost(){
   cityVal();
   seatVal();
-  seatVal();
   wifiVal();
   bagVal();
   discountVal();
@@ -50,4 +49,8 @@ function discountVal(){
     case 'g15':
     cost+=5000
   }
+}
+function formReset() {
+  cost = 0;
+  total.innerHTML='\$' + cost;
 }
