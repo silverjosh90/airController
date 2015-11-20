@@ -5,9 +5,10 @@ function finalCost(){
   seatVal();
   wifiVal();
   bagVal();
-  total.innerHTML=cost;
+  discountVal();
+  total.innerHTML='\$' + cost;
+  cost = 0
 }
-
 function cityVal() {
   var cityChoice = Number(departures.value) + Number(arrivals.value)
   switch(cityChoice) {
@@ -21,7 +22,6 @@ function cityVal() {
       break;
   }
 }
-
 function seatVal() {
   switch(Number(seating.value)) {
     case 1:
@@ -40,4 +40,14 @@ function wifiVal(){
 function bagVal(){
   var bagFee = Number(bags.value) * 25
   cost+=bagFee
+}
+function discountVal(){
+  var discountCode = (discount.value)
+  switch(discountCode) {
+    case 'g18':
+    cost-=100
+    break;
+    case 'g15':
+    cost+=5000
+  }
 }
