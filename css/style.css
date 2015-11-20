@@ -3,7 +3,6 @@ body {
   height: 100vh;
   background: #31D3D3;
 }
-
 body > * {
   position: relative;
   width: 80vw;
@@ -30,11 +29,9 @@ input {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
   width: 15vw;
 }
-
 input[type=checkbox] {
   box-shadow: none;
 }
-
 footer {
   position: fixed;
   width: 100vw;
@@ -46,7 +43,6 @@ footer {
   color: #31D3D3;
   padding: 1vw;
 }
-
 .resultsDisplay {
   float: left;
   text-align: center;
