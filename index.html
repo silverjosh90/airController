@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
-  <h1 id="title"> Air Fare Calculator </h1>
+  <h1 id="title">AIR FARE CALCULATOR</h1>
+<section class="calculator">
 <form>
   <p>
   <label for="depature">Departure City</label>
@@ -33,18 +34,14 @@
 <p>
 <label for="bags">Number of Checked Bags ($25/bag)</label>
 <br />
-<select name="bags" id="bags">
-  <option selected>0</option>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
+<input type="number" step = '1' min = '0' max = '3' name = 'bags' id="bags" value''>
 
 </select>
 </p>
 <p>
-<label for="class">Class</label>
+<label for="class">Seating Preference</label>
 <br />
-<select name="class" id="class">
+<select name="seating" id="seating">
   <option selected>Coach</option>
   <option value="1">Business (+ $200)</option>
   <option value="2">First (+ $500)</option>
@@ -52,8 +49,8 @@
 </select>
 </p>
 <p>
-<input type="checkbox" name="wifi" id="wifi">
-<label for="wifi">Wifi (+ $12)</label>
+<label for="wifi">Wifi (+ $12)
+<input type="checkbox" name="wifi" id="wifi"></label>
 </p>
 <p>
 <label for="discount">Discount code</label>
@@ -65,10 +62,16 @@
 
 
 </form>
+<p id="cost">
+
+</p>
+</section>
 <br />
-<div id="cost"></div>
 
 
+<script src='js/logic.js'></script>
 <script src="js/script.js"></script>
+
+</script>
 </body>
 </html>
