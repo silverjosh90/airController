@@ -7,6 +7,7 @@ function fareMe() {
       break;
     case 3.1:
       cost+=545
+      break;
     case 2.5:
       cost+=350
       break;
