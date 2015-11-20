@@ -6,6 +6,68 @@
   <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
+  <h1 id="title"> Air Fare Calculator </h1>
+<form>
+  <p>
+  <label for="depature">Departure City</label>
+<br />
+  <select name="departure" id="departure">
+    <option selected>Select a City..</option>
+    <option value="1.2" id="chicagoD">Chicago</option>
+    <option value="1.3" id="losangelesD">Los Angeles</option>
+    <option value="1.8" id="newYorkD">New York</option>
+
+  </select>
+</p>
+<p>
+<label for="arrival">Arrival City</label>
+<br />
+<select name="arrival" id="arrival">
+  <option selected>Select a City..</option>
+  <option value="1.2" id="chicagoA">Chicago</option>
+  <option value="1.3" id="losangelesA">Los Angeles</option>
+  <option value="1.8" id="newYorkA">New York</option>
+
+</select>
+</p>
+<p>
+<label for="bags">Number of Checked Bags ($25/bag)</label>
+<br />
+<select name="bags" id="bags">
+  <option selected>0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+
+</select>
+</p>
+<p>
+<label for="class">Class</label>
+<br />
+<select name="class" id="class">
+  <option selected>Coach</option>
+  <option value="1">Business (+ $200)</option>
+  <option value="2">First (+ $500)</option>
+
+</select>
+</p>
+<p>
+<input type="checkbox" name="wifi" id="wifi">
+<label for="wifi">Wifi (+ $12)</label>
+</p>
+<p>
+<label for="discount">Discount code</label>
+<br />
+<input type="text" name="discount" id="discount">
+</p>
+
+<button type="button" id="button">Calculate Price</button>
+
+
+</form>
+<br />
+<div id="cost"></div>
+
 
 <script src="js/script.js"></script>
 </body>
